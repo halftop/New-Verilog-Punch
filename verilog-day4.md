@@ -68,10 +68,10 @@ endmodule
 
 #### 本题至少使用几个1bit全加器
 
-下图使用八个1来说明。若不是最少请指正。
+下图使用八个1来说明。[参考链接](https://forum.allaboutcircuits.com/threads/count-number-of-logic-1s-in-7-bit-number.49821/)
 
 <center>
-    <img src="https://ws1.sinaimg.cn/large/7f79daaely1g1ol572qzdj20ss0ssact.jpg" alt="全加器计数" title="全加器计数" width="400">
+    <img src="https://i.loli.net/2019/04/25/5cc1bb25dcb89.png" alt="全加器计数" title="全加器计数" width="400">
 </center>
 
 ### 4. 使用2输入mux(o = s ？a ：b;)，TIEH(输出常数1)，TIEL(输出常数0)实现以下功能。
