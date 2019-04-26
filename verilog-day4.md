@@ -59,9 +59,9 @@ endmodule
 ```v
 module test_20(
 	input 	[7:0]	i_data,
-	output	[2:0]	o_count
+	output	[3:0]	o_count
 );
-assign o_count = ( ( (i_data[0] + i_data[1]) + (i_data[2] + i_data[3]) ) + ( (i_data[4] +  i_data[5]) + (i_data[6] + i_data[7]) ) );
+assign o_count = ((i_data[0] + i_data[1] + i_data[2]) + (i_data[3] + i_data[4] + i_data[5]) + i_data[6]) + i_data[7];
 
 endmodule
 ```
@@ -81,5 +81,39 @@ endmodule
 </center>
 
 <center>
-    <img src="https://ws1.sinaimg.cn/mw690/7f79daaely1g2equ4tnj6j22dr1on4dn.jpg" alt="4.6" title="4.6" width="500">
+    <img src="https://ws1.sinaimg.cn/large/7f79daaely1g2equ4tnj6j22dr1on4dn.jpg" alt="4.6" title="4.6" width="500">
 </center>
+
+```v
+module mux2com(
+    input       a,
+    input       b,
+    input       c,
+    input       d,
+
+    input       s0,s1,
+
+    output      f_inv,
+    output      f_buffer,
+    output      f_and2,
+    output      f_or2,
+    output      f_mux4,
+
+    output      adder_sum,
+    output      adder_carry
+    );
+
+assign f_inv = a ? 0 : 1;
+
+assign f_buffer = a ? 1 : 0;
+
+assign f_and2 = a ? b : 0;
+
+assign f_or2 = a ? 1 : b;
+
+assign f_mux4 = s1 ? (s0?a:b) : (s0?c:d);
+
+assign adder_sum = (a?(b?0:1):b)?(c?0:1):c;     
+assign adder_carry = (c?b:0)?1:((c?a:0)?1:(b?a:0));
+endmodule
+```
