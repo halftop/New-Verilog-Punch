@@ -4,7 +4,7 @@ date: 2019-04-25 09:52:28
 tags: [IC,Verilog HDL,学习笔记]
 published: true
 hideInList: false
-feature: https://ws1.sinaimg.cn/mw690/7f79daaely1g2endkdglxj22bc1tuqv5.jpg
+feature: https://i.loli.net/2019/04/25/5cc1d3dce9134.jpg
 ---
 ## 题目
 >1. 什么是竞争和冒险？
@@ -18,6 +18,17 @@ feature: https://ws1.sinaimg.cn/mw690/7f79daaely1g2endkdglxj22bc1tuqv5.jpg
 >    5. 四输入的mux  mux4
 >    6. 一位全加器 fa
 <!-- more --> 
+
+- [题目](#题目)
+  - [1. 什么是竞争和冒险？](#1-什么是竞争和冒险)
+  - [2. 设计一个2-4译码器。](#2-设计一个2-4译码器)
+    - [verilog描述](#verilog描述)
+    - [门级电路图](#门级电路图)
+  - [3. 输入一个8bit数，输出其中1的个数。如果只能使用1bit全加器，最少需要几个？](#3-输入一个8bit数输出其中1的个数如果只能使用1bit全加器最少需要几个)
+    - [verilog描述](#verilog描述-1)
+    - [本题至少使用几个1bit全加器](#本题至少使用几个1bit全加器)
+  - [4. 使用2输入mux(o = s ？a ：b;)，TIEH(输出常数1)，TIEL(输出常数0)实现以下功能。](#4-使用2输入muxo--s-a-btieh输出常数1tiel输出常数0实现以下功能)
+
 
 ### 1. 什么是竞争和冒险？
 
@@ -49,8 +60,8 @@ endmodule
 #### 门级电路图
 电路图在下面，因为反相器、与非门和或非门是cmos集成电路的基本单元，所以选择了这样的实现形式。
 <figure class="half">
-	<img src="https://ws1.sinaimg.cn/large/7f79daaely1g1oepelcemj21341d0djp.jpg" alt="卡诺图化简" title="卡诺图化简" width="220">
-	<img src="https://ws3.sinaimg.cn/large/7f79daaely1g1oeqjjlauj20640570sn.jpg" alt="2-4译码器门级电路图" title="2-4译码器门级电路图">
+	<img src="https://i.loli.net/2019/04/25/5cc1cef303097.png" alt="卡诺图化简" title="卡诺图化简" width="220">
+	<img src="https://i.loli.net/2019/04/25/5cc1cefe5b34f.jpg" alt="2-4译码器门级电路图" title="2-4译码器门级电路图">
 </figure>
 
 ### 3. 输入一个8bit数，输出其中1的个数。如果只能使用1bit全加器，最少需要几个？
@@ -61,7 +72,7 @@ module test_20(
 	input 	[7:0]	i_data,
 	output	[3:0]	o_count
 );
-assign o_count = ((i_data[0] + i_data[1] + i_data[2]) + (i_data[3] + i_data[4] + i_data[5]) + i_data[6]) + i_data[7];
+assign o_count = ((i_data[0] + i_data[1] + i_data[2]) + (i_data[3] + i_data[4] +  i_data[5]) + i_data[6]) + i_data[7];
 
 endmodule
 ```
@@ -77,11 +88,11 @@ endmodule
 ### 4. 使用2输入mux(o = s ？a ：b;)，TIEH(输出常数1)，TIEL(输出常数0)实现以下功能。
 
 <center>
-    <img src="https://ws1.sinaimg.cn/large/7f79daaely1g2eqsji2fgj22dr1onh34.jpg" alt="4.1-4.5" title="4.1-4.5" width="500">
+    <img src="https://i.loli.net/2019/04/25/5cc1d2de6756b.png" alt="4.1-4.5" title="4.1-4.5" width="500">
 </center>
 
 <center>
-    <img src="https://ws1.sinaimg.cn/large/7f79daaely1g2equ4tnj6j22dr1on4dn.jpg" alt="4.6" title="4.6" width="500">
+    <img src="https://i.loli.net/2019/04/25/5cc1d2e9d940c.png" alt="4.6" title="4.6" width="500">
 </center>
 
 ```v

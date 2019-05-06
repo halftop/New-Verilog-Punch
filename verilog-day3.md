@@ -4,7 +4,7 @@ date: 2019-04-24 21:32:31
 tags: [IC,学习笔记]
 published: true
 hideInList: false
-feature: https://ws1.sinaimg.cn/large/7f79daaely1g2e4oh2235j20ji0kn3zi.jpg
+feature: https://i.loli.net/2019/05/03/5ccba0d941f6a.jpg
 ---
 ### 题目
 
@@ -16,19 +16,29 @@ feature: https://ws1.sinaimg.cn/large/7f79daaely1g2e4oh2235j20ji0kn3zi.jpg
 >6. Verilog文件中包含了哪些信息？
 <!-- more -->
 
+<!-- TOC -->
+
+- [题目](#题目)
+  - [2. 阅读文档transition time, propagation delay等参数的定义。](#2-阅读文档transition-time-propagation-delay等参数的定义)
+  - [3. 阅读文档Power Dissipation/Calculation的描述。](#3-阅读文档power-dissipationcalculation的描述)
+  - [4. 阅读文档Delay calculation的描述。](#4-阅读文档delay-calculation的描述)
+  - [5. 提供了哪些类型的cell？](#5-提供了哪些类型的cell)
+  - [6. Verilog文件中包含了哪些信息？](#6-verilog文件中包含了哪些信息)
+
+<!-- /TOC -->
 今天的答案基本靠抄（流下了没有知识的眼泪）。
 
 #### 2. 阅读文档transition time, propagation delay等参数的定义。
 transition time（转化时间）：信号从10% Vdd变化到90% Vdd的时间，包括上升时间和下降时间。
 
 <center>
-    <img src="https://ws1.sinaimg.cn/large/7f79daaely1g2e282eee0j20ez04zglq.jpg" alt="transition time" title="transition time" >
+    <img src="https://i.loli.net/2019/04/25/5cc1d290ac0ef.jpg" alt="transition time" title="transition time" >
 </center>
 
 propagation delay（传播延时）：输入信号变化到超过50%Vdd与输出信号变化到超过50%Vdd的时间间隔。
 
 <center>
-    <img src="https://ws1.sinaimg.cn/large/7f79daaely1g2e2rqoyx3j20e905a74c.jpg" alt="propagation delay" title="propagation delay" >
+    <img src="https://i.loli.net/2019/04/25/5cc1d2aa0b781.jpg" alt="propagation delay" title="propagation delay" >
 </center>
 
 #### 3. 阅读文档Power Dissipation/Calculation的描述。

@@ -1,3 +1,11 @@
+---
+title: Verilog没有葵花宝典——day2（门电路）
+date: 2019-04-23 17:58:09
+tags: [学习笔记,IC]
+published: true
+hideInList: false
+feature: https://i.loli.net/2019/05/03/5ccba16db6654.jpg
+---
 ## 题目
 
 >1. 画一下电路图：CMOS反相器、与非门、或非门、三态输出门、漏极开路门。
@@ -8,6 +16,17 @@
 >6. 相同面积的cmos与非门和或非门哪个更快？
 
 <!-- more -->
+
+- [题目](#题目)
+  - [第一题](#第一题)
+    - [cmos集成电路的基本单元（反相器、与非门、或非门）](#cmos集成电路的基本单元反相器与非门或非门)
+    - [三态输出门](#三态输出门)
+    - [漏极开路门](#漏极开路门)
+  - [第二题](#第二题)
+  - [第三题](#第三题)
+  - [第四题](#第四题)
+  - [第五题](#第五题)
+  - [第六题](#第六题)
 
 ### 第一题
 
@@ -20,7 +39,7 @@ PMOS——空穴导电，低电平通，高电平断，传递高电平$\to$连�
 每个输入连接1P、1N；NMOS串联表示“与”；NMOS并联表示“或”。
 
 <center>
-    <img src="https://wx2.sinaimg.cn/large/7f79daaely1g2dhckwys2j219r0n90wk.jpg" alt="cmos集成电路的基本单元（反相器、与非门、或非门）" title="cmos集成电路的基本单元（反相器、与非门、或非门）" width="600">
+    <img src="https://i.loli.net/2019/04/25/5cc1d08d95341.jpg" alt="cmos集成电路的基本单元（反相器、与非门、或非门）" title="cmos集成电路的基本单元（反相器、与非门、或非门）" width="600">
 </center>
 
 
@@ -37,7 +56,7 @@ CMOS三态门是在普通门的基础上增加了控制端和控制电路。CMOS
 3. 利用或非门或者与非门实现三态功能。如下图（d）（e）。
 
 <center>
-    <img src="https://wx3.sinaimg.cn/large/7f79daaely1g2cwtjjdptj213w0tztaf.jpg" alt="三态门" title="三态门" width="600">
+    <img src="https://i.loli.net/2019/04/25/5cc1c9b97d9d3.png" alt="三态门" title="三态门" width="600">
 </center>
 
 
@@ -48,13 +67,13 @@ CMOS漏极开路门（Open-Drain Gate），又称漏极开路输出（open-drain
 各种CMOS门电路都可构成漏极开路门，下图为CMOS与非OD门的电路结构。F=(AB)'
 
 <center>
-    <img src="https://wx2.sinaimg.cn/large/7f79daaely1g2cwtnubonj20a304cmxh.jpg" alt="OD门" title="OD门" >
+    <img src="https://i.loli.net/2019/04/25/5cc1ccb296f99.png" alt="OD门" title="OD门" >
 </center>
 
 漏极开路OD门电路内的输出MOS管漏极是开路的，应用时，需要通过外接电阻（Extension resistance）接电源。与TTL集成的OC门类似，CMOS集成的OD门也可实现线与（Wired and）连接。
 
 <center>
-    <img src="https://wx1.sinaimg.cn/large/7f79daaely1g2cwtpi31pj20kl0es117.jpg" alt="OD门实现线与逻辑" title="OD门实现线与逻辑" width="600">
+    <img src="https://i.loli.net/2019/04/25/5cc1d13190f8f.jpg" alt="OD门实现线与逻辑" title="OD门实现线与逻辑" width="600">
 </center>
 
 可以看出，OD门就是将反相器的上面的PMOS管拿掉了而已。
@@ -92,13 +111,13 @@ IDDQ:IDDQ是指当CMOS集成电路中的所有管子都处于静止状态时的�
 通常，输出信号由低电平变为高电平时，输出相对输入的延迟时间记为$t_{\mathrm { PLH }}$：而输出信号由高电平变为低电平时，输出相对输入的延迟时间记为$t _ { \mathrm { PHL } }$。
 
 <center>
-    <img src="https://wx2.sinaimg.cn/large/7f79daaely1g2cwtvdiefj20bv04w3z2.jpg" alt="传播延迟" title="传播延迟">
+    <img src="https://i.loli.net/2019/04/25/5cc1d21c583b6.jpg" alt="传播延迟" title="传播延迟">
 </center>
 
 转换时间（transition time）：用来描述逻辑电路的输出从一种状态变为另一种状态所需的时间。其中输出从低态到高态的转换时间称为上升时间（$\mathrm{t}_{\mathrm{r}}$,rise time）；从高态到低态的转换时间称为下降时间（$\mathrm{t}_{\mathrm{f}}$,fall time）。
 
 <center>
-    <img src="https://wx2.sinaimg.cn/large/7f79daaely1g2cwtwqawwj20bt04it97.jpg" alt="上升时间和下降时间" title="上升时间和下降时间">
+    <img src="https://i.loli.net/2019/04/25/5cc1d245690f3.jpg" alt="上升时间和下降时间" title="上升时间和下降时间">
 </center>
 
 ### 第四题

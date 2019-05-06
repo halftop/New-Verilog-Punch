@@ -4,7 +4,7 @@ date: 2019-04-29 16:23:17
 tags: [IC,FPGA,Verilog HDL,学习笔记]
 published: true
 hideInList: false
-feature: 
+feature: https://i.loli.net/2019/05/03/5ccb9f5ac0190.jpg
 ---
 ## 题目
 
@@ -18,6 +18,18 @@ feature:
 > 
 > 3. 记录一下第2题中用到的工具，包括工具版本，操作步骤或命令选项，遇到的错误，提示信息等。
 <!-- more --> 
+
+- [题目](#题目)
+  - [1.1 reg和wire的区别](#11-reg和wire的区别)
+    - [驱动( Driving)和赋值( Assigning)](#驱动-driving和赋值-assigning)
+  - [1.2 阻塞赋值与非阻塞赋值的区别](#12-阻塞赋值与非阻塞赋值的区别)
+  - [1.3 parameter与define的区别](#13-parameter与define的区别)
+  - [1.4 task与function的区别](#14-task与function的区别)
+  - [2. 用verilog实现边沿检测电路：上升沿，下降沿，双沿(上升或下降沿)。](#2-用verilog实现边沿检测电路上升沿下降沿双沿上升或下降沿)
+    - [verilog描述](#verilog描述)
+    - [testbench](#testbench)
+    - [仿真图](#仿真图)
+  - [3. 记录一下第2题中用到的工具，包括工具版本，操作步骤或命令选项，遇到的错误，提示信息等。](#3-记录一下第2题中用到的工具包括工具版本操作步骤或命令选项遇到的错误提示信息等)
 
 ### 1.1 reg和wire的区别
 

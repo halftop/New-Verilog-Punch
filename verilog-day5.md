@@ -4,7 +4,7 @@ date: 2019-04-26 16:34:48
 tags: [Verilog HDL,FPGA,IC,学习笔记]
 published: true
 hideInList: false
-feature: 
+feature: https://i.loli.net/2019/05/03/5ccba0745769c.jpg
 ---
 ## 题目
 
@@ -14,6 +14,17 @@ feature:
 > 4. 设计一个101序列检测器。要画出状态转移图，写verilog，并仿真测试。
 
 <!-- more -->
+
+- [题目](#题目)
+  - [1. dff和latch有什么区别。](#1-dff和latch有什么区别)
+  - [2. 什么是同步电路和异步电路。](#2-什么是同步电路和异步电路)
+  - [3. 什么是setup time和 hold time。](#3-什么是setup-time和-hold-time)
+  - [4. 设计一个101序列检测器。要画出状态转移图，写verilog，并仿真测试。](#4-设计一个101序列检测器要画出状态转移图写verilog并仿真测试)
+    - [状态转移图](#状态转移图)
+    - [verilog描述](#verilog描述)
+    - [testbench](#testbench)
+    - [仿真结果](#仿真结果)
+
 
 ### 1. dff和latch有什么区别。
 都是时序逻辑，输出不但同当前的输入相关还同上一状态的输出相关。

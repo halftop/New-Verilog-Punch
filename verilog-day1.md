@@ -4,7 +4,7 @@ date: 2019-04-22 20:57:17
 tags: [Verilog HDL,学习笔记]
 published: true
 hideInList: false
-feature: https://ws1.sinaimg.cn/large/7f79daaely1g2cwnsl0exj24802tc4qs.jpg
+feature: https://i.loli.net/2019/04/25/5cc1d354629e4.jpg
 ---
 ## 题目
 >1. bit, byte, word, dword, qword的区别。
@@ -14,6 +14,17 @@ feature: https://ws1.sinaimg.cn/large/7f79daaely1g2cwnsl0exj24802tc4qs.jpg
 >5. 异步FIFO深度为17，如何设计地址格雷码？
 
 <!-- more -->
+
+- [题目](#题目)
+	- [第一题](#第一题)
+	- [第二题](#第二题)
+	- [第三题](#第三题)
+	- [第四题](#第四题)
+		- [verilog描述](#verilog描述)
+		- [思路及电路图](#思路及电路图)
+	- [第五题（待后续研究）](#第五题待后续研究)
+		- [只能偶数，深度为18（5bit）](#只能偶数深度为185bit)
+		- [也有文档说17+17的（6bit）](#也有文档说1717的6bit)
 
 ### 第一题
 bit：位，二进制中的一位，是计算机存储信息的最小单位；
@@ -99,9 +110,9 @@ endmodule
 
 #### 思路及电路图
 <figure class="third">
-    <img src="https://ws1.sinaimg.cn/large/7f79daaely1g2bqimqft5j20ub0n2dok.jpg" alt="BCD译码器功能表" title="BCD译码器功能表">
-    <img src="https://wx3.sinaimg.cn/large/7f79daaely1g1ojh5y4ypj208w0b23yp.jpg" alt="门级电路图" title="门级电路图">
-    <img src="https://ws1.sinaimg.cn/large/7f79daaely1g2bqo7wxscj20yb0lnmz3.jpg" alt="Vivado综合的门级电路图" title="Vivado综合的门级电路图">
+    <img src="https://i.loli.net/2019/04/25/5cc1cf28606f4.png" alt="BCD译码器功能表" title="BCD译码器功能表">
+    <img src="https://i.loli.net/2019/04/25/5cc1cf9069464.jpg" alt="门级电路图" title="门级电路图">
+    <img src="https://i.loli.net/2019/04/25/5cc1cf4c6a932.png" alt="Vivado综合的门级电路图" title="Vivado综合的门级电路图">
 </figure>
 
 ### 第五题（待后续研究）
